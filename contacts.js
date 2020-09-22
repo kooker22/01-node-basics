@@ -33,7 +33,9 @@ module.exports.removeContact = async function (contactId) {
   console.table(filteredList);
   fs.writeFile(contactsPath, FilteredListAsJSON, (err) => {
     if (err) throw err;
+
     return err;
+
   });
 };
 
